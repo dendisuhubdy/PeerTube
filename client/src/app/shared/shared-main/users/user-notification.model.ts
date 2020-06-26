@@ -178,7 +178,7 @@ export class UserNotification implements UserNotificationServer {
     return videoImport.targetUrl || videoImport.magnetUri || videoImport.torrentName
   }
 
-  private setAvatarUrl (actor: { avatarUrl?: string, avatar?: Avatar }) {
+  private setAvatarUrl (actor: { avatarUrl?: string, avatar?: { url?: string, path: string } }) {
     actor.avatarUrl = Actor.GET_ACTOR_AVATAR_URL(actor)
   }
 }

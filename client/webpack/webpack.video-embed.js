@@ -50,7 +50,7 @@ module.exports = function () {
             {
               loader: 'awesome-typescript-loader',
               options: {
-                configFileName: 'tsconfig.json'
+                configFileName: 'tsconfig.base.json'
               }
             }
           ],
